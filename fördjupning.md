@@ -48,11 +48,11 @@ I **Linux** modellen för filhantering det lätt att genomsöka och lätt hitta 
 
 **Windows** filhanteringsystem tillåter betydligt mer specefika och i vissa fall personliga behörighetsregler på olika användarnivåer. Detta ger hög flexibilitet **men** det kan bli rörigt i behörighetstrukturen. En användare likt Alice kan se att en fil finns, men inte ha rättigheter att öppna den.  
 
-*Reflektion av hur man sätter upp användare och grupper i linux och Windows*    
+*Hur man sätter upp användare och grupper i linux och Windows*    
 **Linux**   
 För att skapa en ny användare skriver man `adduser (användarens namn)` sedan skapar man grupp `groupadd (gruppnamn)`
 lägga till en ny användare i en grupp skriver man likt nedan `sudo usermod -aG "gruppnamn" "användarens namn"`  
- Linux använder sig av Least privliage system så när man lägger till användare så får dom minsta möjliga behörighet från start. Sedan finns det ägare,grupp och överiga som man kna "katigoriera" det gör linux snabbt och enkelt men inte så komplicerat eller djupgådene i alla olika behörighetr.   
+ Linux använder sig av Least privliage system så när man lägger till användare så får dom minsta möjliga behörighet från start. Sedan finns det ägare,grupp och överiga som man kan "katigoriera" det gör linux snabbt och enkelt men inte så komplicerat eller djupgådene i alla olika behörighetr.   
 
 ![Linux](<Screenshot 2026-09-24 132354.png>)    
 - likt bilden här skrev jag in `id alice` vilket är för att se vilka grupper hon är med i. Sedan lägger jag till henne i gruppen g_personal, **viktigt** att nämna är att när man vill lägga til en grupp för en användare ska man skriva -aG innan. Detta gör vi för att inte alla andra grupper användaren är med i ska försvinna. Vi vill enbart lägga till en grupp till för användaren, då använder vi detta komando innan gruppnamnet `-aG`.
@@ -66,4 +66,4 @@ Windows har ett säkert sätt att tillåta eller inte en användare att komma å
 ![lägger till anävndare i gruooer Windows](<Screenshot 2026-09-24 133948.png>)  
 ![Ger behörighet till grupper Windows](<Screenshot 2026-09-24 133938.png>)  
 ---
-- 
+-  
