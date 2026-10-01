@@ -60,10 +60,9 @@ lägga till en ny användare i en grupp skriver man likt nedan `sudo usermod -aG
 
 
 *Windows*  
-Windows har ett säkert sätt att tillåta eller inte en användare att komma åt en fil likt `/deny eller /grant` i sin kod. Det gör det säkert genom att redan i början inte tillåta användren att komma åt filen. Windows har även flertalet olika rättigheter inom filer vilket vi ser i bilderna M och F på slutet innebär olika behörigheter. Nu vill vi inte att bob ska komma åt något alls. Då sätter vi deny och F vilket är Full access. detta betyder i scriptet att Bob har inte tillgång till någon full access överhuvudtaget,- då F är "mest behörigeth" 
+Windows har ett säkert sätt att tillåta eller inte en användare att komma åt en fil likt `/deny eller /grant` i sin kod. Det gör det säkert genom att redan i början inte tillåta användren att komma åt filen. Windows har även flertalet olika rättigheter inom filer vilket vi ser i bilderna M och F på slutet innebär olika behörigheter. Nu vill vi inte att bob ska komma åt något alls. Då sätter vi deny och F vilket är Full access. Detta betyder i scriptet att Bob har inte tillgång till någon full access överhuvudtaget,- då F är "mest behörighet" 
 
 
 ![lägger till anävndare i gruooer Windows](<Screenshot 2026-09-24 133948.png>)  
 ![Ger behörighet till grupper Windows](<Screenshot 2026-09-24 133938.png>)  
 ---
--  
